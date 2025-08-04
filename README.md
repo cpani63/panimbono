@@ -1,1 +1,1 @@
-recursos web par aPanimbono consultores
+recursos web para Panimbono consultores
