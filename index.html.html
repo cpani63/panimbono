@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de IA para WhatsApp: Transforma tu Negocio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f8fafc; /* Tailwind slate-50 */
+        }
+        .header-scrolled {
+            background-color: rgba(15, 23, 42, 0.95); /* slate-900 with opacity */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 py-4 transition-all duration-300 ease-in-out">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
+            <a href="#" class="text-2xl font-extrabold text-white">PANIMBONO <span class="text-green-400">consultores</span></a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-white hover:text-green-400 transition-colors duration-200">Inicio</a>
+                <a href="#beneficios" class="text-white hover:text-green-400 transition-colors duration-200">Beneficios</a>
+                <a href="#planes" class="text-white hover:text-green-400 transition-colors duration-200">Planes</a>
+                <a href="#contacto" class="text-white hover:text-green-400 transition-colors duration-200">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800/95 backdrop-blur-md py-4 mt-4 rounded-lg mx-4">
+            <nav class="flex flex-col items-center space-y-4">
+                <a href="#hero" class="text-white hover:text-green-400 transition-colors duration-200 py-2">Inicio</a>
+                <a href="#beneficios" class="text-white hover:text-green-400 transition-colors duration-200 py-2">Beneficios</a>
+                <a href="#planes" class="text-white hover:text-green-400 transition-colors duration-200 py-2">Planes</a>
+                <a href="#contacto" class="text-white hover:text-green-400 transition-colors duration-200 py-2">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-br from-slate-900 via-indigo-900/50 to-slate-900/40 text-white py-20 md:py-32 min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <!-- Background pattern or image placeholder -->
+            <img src="https://placehold.co/1920x1080/1a202c/ffffff?text=Fondo+Abstracto+IA" alt="Fondo Abstracto IA" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto text-center relative z-10 px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animated-section">
+                Transforma tu WhatsApp en tu Mejor Vendedor con <span class="text-green-400">IA</span>
+            </h1>
+            <p class="text-lg md:text-xl text-blue-200 mb-8 max-w-3xl mx-auto animated-section">
+                Ofrece atención al cliente 24/7, automatiza ventas y potencia la eficiencia de tu negocio como nunca antes.
+            </p>
+            <a href="#planes" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 animated-section">
+                Descubre Nuestros Planes
+            </a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-20 bg-white animated-section">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-12">
+                ¿Por Qué Necesitas un Agente de IA para WhatsApp?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i data-lucide="clock" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Disponibilidad 24/7</h3>
+                    <p class="text-slate-600">Tu negocio nunca duerme. Atiende consultas y procesa pedidos a cualquier hora, fines de semana y festivos.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i data-lucide="trending-up" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Aumento de Ventas</h3>
+                    <p class="text-slate-600">Guía a tus clientes a través del embudo de ventas, responde objeciones y cierra más tratos automáticamente.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i data-lucide="users" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Mejora la Experiencia del Cliente</h3>
+                    <p class="text-slate-600">Ofrece respuestas rápidas y precisas, personalizando la interacción y aumentando la satisfacción.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i data-lucide="zap" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Eficiencia Operativa</h3>
+                    <p class="text-slate-600">Libera a tu equipo de tareas repetitivas para que puedan enfocarse en actividades de mayor valor.</p>
+                </div>
+                <!-- Benefit 5 -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i data-lucide="bar-chart-2" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Analíticas y Reportes</h3>
+                    <p class="text-slate-600">Obtén información valiosa sobre las interacciones con tus clientes para tomar decisiones informadas.</p>
+                </div>
+                <!-- Benefit 6 -->
+                <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i data-lucide="message-circle" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Comunicación Consistente</h3>
+                    <p class="text-slate-600">Asegura que cada cliente reciba la misma información de calidad, siempre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planes" class="py-20 bg-slate-100 animated-section">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+                Nuestros Planes de Transformación Digital
+            </h2>
+            <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">
+                Encuentra la solución perfecta para tu negocio. Precios en USD para Venezuela.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Plan Básico -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-blue-500 flex flex-col items-center transform hover:scale-[1.02] transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Plan Básico</h3>
+                    <p class="text-slate-600 mb-6">Ideal para pequeños negocios y emprendedores.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-slate-800">$25</span>
+                        <span class="text-xl text-slate-500">/mes</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">Costo de Configuración Inicial: <span class="font-bold">$50</span></p>
+                    <ul class="text-left text-slate-700 space-y-3 mb-8 w-full">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Respuestas automáticas básicas</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Hasta 500 conversaciones/mes</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Soporte vía email</li>
+                        <li class="flex items-center text-slate-400"><i data-lucide="x-circle" class="w-5 h-5 text-red-400 mr-2"></i> Integración con CRM</li>
+                        <li class="flex items-center text-slate-400"><i data-lucide="x-circle" class="w-5 h-5 text-red-400 mr-2"></i> Reportes avanzados</li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md">
+                        Seleccionar Básico
+                    </a>
+                </div>
+
+                <!-- Plan Pro (Destacado) -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl border-t-4 border-green-600 flex flex-col items-center transform scale-105 hover:scale-110 transition-all duration-300">
+                    <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase">Más Popular</span>
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">Plan Pro</h3>
+                    <p class="text-slate-600 mb-6">Ideal para PYMES y negocios en crecimiento.</p>
+                    <div class="mb-6">
+                        <span class="text-5xl font-extrabold text-slate-800">$75</span>
+                        <span class="text-xl text-slate-500">/mes</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">Costo de Configuración Inicial: <span class="font-bold">$150</span></p>
+                    <ul class="text-left text-slate-700 space-y-3 mb-8 w-full">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Todo lo del Plan Básico</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Hasta 2,000 conversaciones/mes</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Integración con CRM básico</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Reportes de rendimiento</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Soporte prioritario</li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md">
+                        Seleccionar Pro
+                    </a>
+                </div>
+
+                <!-- Plan Empresarial -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-orange-500 flex flex-col items-center transform hover:scale-[1.02] transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-orange-500 mb-4">Plan Empresarial</h3>
+                    <p class="text-slate-600 mb-6">Para grandes empresas y alto volumen de interacciones.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-slate-800">$150</span>
+                        <span class="text-xl text-slate-500">/mes</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">Costo de Configuración Inicial: <span class="font-bold">$300</span></p>
+                    <ul class="text-left text-slate-700 space-y-3 mb-8 w-full">
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Todo lo del Plan Pro</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Conversaciones ilimitadas</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Integraciones avanzadas (e-commerce, inventario)</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Agente de IA personalizado</li>
+                        <li class="flex items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i> Soporte 24/7 y analíticas avanzadas</li>
+                    </ul>
+                    <a href="#contacto" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-md">
+                        Seleccionar Empresarial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contacto" class="py-20 bg-gradient-to-r from-blue-600 to-blue-800/50 text-white text-center animated-section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                ¿Listo para Potenciar tu Negocio?
+            </h2>
+            <p class="text-lg text-blue-200 mb-8 max-w-3xl mx-auto">
+                Contáctanos hoy mismo para una consulta gratuita y descubre cómo un agente de IA puede transformar tu atención al cliente en WhatsApp.
+            </p>
+            <a href="https://panico-consultores.odoo.com/book/777d3132" target="_blank" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-slate-100 transition-all duration-300 transform hover:scale-105">
+                Agenda una Consulta Gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-sm">&copy; PANIMBONO consultores - Agente IA para WhatsApp. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Una propuesta para la transformación y el crecimiento de tu negocio.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const header = document.getElementById('header');
+            const navLinks = document.querySelectorAll('#mobile-menu a, nav a');
+
+            // Toggle mobile menu visibility
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Add/remove 'scrolled' class to header on scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+
+            // Intersection Observer for animated sections
+            const sections = document.querySelectorAll('.animated-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        // Optionally remove 'visible' class if you want elements to re-animate on scroll back
+                        // entry.target.classList.remove('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger when 10% of the section is visible
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
